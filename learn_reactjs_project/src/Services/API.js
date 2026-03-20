@@ -1,23 +1,11 @@
-async function addToCart() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const data = await response.json();
+const addToCart = async (count) => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return count + 1;
+};
 
-    console.log(data);
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
-
-async function removeFromCart() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const data = await response.json();
-
-    console.log(data);
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
+const removeFromCart = async (count) => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return Math.max(0, count - 1);
+};
 
 export { removeFromCart, addToCart };
