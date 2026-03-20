@@ -5,7 +5,10 @@
 // import MyApp from "./Hooks/UseContextExample";
 // import UseDeferredValueExample from "./Hooks/UseDeferredValueExample";
 // import WindowSize from "./Hooks/UseDebugValuesExample";
-import { UseEffectExample } from "./Hooks/UseEffectExample";
+import {
+  UseEffectExample,
+  UseEffectExampleTwo,
+} from "./Hooks/UseEffectExample";
 
 function App() {
   // return <UseReducerExample />;
@@ -15,7 +18,8 @@ function App() {
   // return <MyApp />;
   // return <UseDeferredValueExample />;
   // return <WindowSize />;
-  return <UseEffectExample />;
+  // return <UseEffectExample />;
+  return <UseEffectExampleTwo />;
 }
 
 export default App;
