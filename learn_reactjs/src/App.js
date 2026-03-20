@@ -9,7 +9,8 @@
 //   UseEffectExample,
 //   UseEffectExampleTwo,
 // } from "./Hooks/UseEffectExample";
-import { UseEffectEvenetTimer } from "./Hooks/UseEffectEventExample";
+// import { UseEffectEvenetTimer } from "./Hooks/UseEffectEventExample";
+import { UseIdExample } from "./Hooks/UseIDExample";
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
@@ -20,7 +21,8 @@ function App() {
   // return <WindowSize />;
   // return <UseEffectExample />;
   // return <UseEffectExampleTwo />;
-  return <UseEffectEvenetTimer />;
+  // return <UseEffectEvenetTimer />;
+  return <UseIdExample />;
 }
 
 export default App;
