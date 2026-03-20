@@ -14,7 +14,6 @@ const UseDeferredValueExample = () => {
   return (
     <div>
       <input
-        // disabled={isLoading }
         value={query}
         onChange={(e) => setquery(e.target.value)}
         placeholder="Search..."

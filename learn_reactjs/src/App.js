@@ -4,14 +4,17 @@
 // import { Checkout } from "./Hooks/UseActionStateExample";
 // import CounterCallBackExample from "./Hooks/UseCallBackExample";
 // import MyApp from "./Hooks/UseContextExample";
-import UseDeferredValueExample from "./Hooks/UseDeferredValueExample";
+// import UseDeferredValueExample from "./Hooks/UseDeferredValueExample";
+import WindowSize from "./Hooks/UseDebugValuesExample";
+
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
   // return <CounterCallBackExample />;
   // return <Checkout />;
   // return <MyApp />;
-  return <UseDeferredValueExample />;
+  // return <UseDeferredValueExample />;
+  return <WindowSize />;
 }
 
 export default App;
