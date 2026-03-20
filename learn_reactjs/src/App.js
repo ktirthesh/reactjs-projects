@@ -3,14 +3,15 @@
 
 // import { Checkout } from "./Hooks/UseActionStateExample";
 // import CounterCallBackExample from "./Hooks/UseCallBackExample";
-import MyApp from "./Hooks/UseContextExample";
-
+// import MyApp from "./Hooks/UseContextExample";
+import UseDeferredValueExample from "./Hooks/UseDeferredValueExample";
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
   // return <CounterCallBackExample />;
   // return <Checkout />;
-  return <MyApp />;
+  // return <MyApp />;
+  return <UseDeferredValueExample />;
 }
 
 export default App;
