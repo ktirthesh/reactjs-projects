@@ -20,12 +20,12 @@ state → latest result from the action
 action → function you call (or pass to <form action={...}>)
 isPending → boolean indicating loading state
  */
-async function submitForm(prevState, formData) {
+const submitForm = async (prevState, formData) => {
   const name = formData.get("name");
   await new Promise((resolve) => setTimeout(resolve, 1000));
   if (!name) return { error: "Name is Required." };
   return { success: `Hello, ${name}!` };
-}
+};
 
 const UseActionStateExample = () => {
   const [state, formAction, isPending] = useActionState(submitForm, null);
@@ -60,16 +60,14 @@ const updateCartAction = async (prevCount, actionPayload) => {
   // eslint-disable-next-line default-case
   switch (actionPayload.type) {
     case "ADD":
-      await addToCart(prevCount);
-      return prevCount + 1;
+      return await addToCart(prevCount);
     case "REMOVE":
-      await removeFromCart(prevCount);
-      return prevCount - 1;
+      return await removeFromCart(prevCount);
   }
   return prevCount;
 };
 
-function Checkout() {
+const Checkout = () => {
   const [count, dispatchAction, isPending] = useActionState(
     updateCartAction,
     0,
@@ -92,6 +90,6 @@ function Checkout() {
       <Total quantity={count} isPending={isPending} />
     </div>
   );
-}
+};
 
 export { UseActionStateExample, Checkout };

@@ -21,7 +21,7 @@ You want predictable state flow
 
 const initialState = { age: 2 };
 
-function reducer(state, action) {
+const reducer = (state, action) => {
   switch (action.type) {
     case "increamented_age":
       return { age: state.age + 1 };
@@ -32,12 +32,13 @@ function reducer(state, action) {
     default:
       return state;
   }
-}
+};
+
 const UseReducerExample = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-      <p>Hello ! you are {state.age}</p>
+      <p>Hello! you are {state.age}</p>
       <button onClick={() => dispatch({ type: "increamented_age" })}>
         Increament age
       </button>
