@@ -11,7 +11,8 @@
 // } from "./Hooks/UseEffectExample";
 // import { UseEffectEvenetTimer } from "./Hooks/UseEffectEventExample";
 // import { UseIdExample } from "./Hooks/UseIDExample";
-import { UseImperativeHandleExample } from "./Hooks/UseImperativeHandleExample";
+// import { UseImperativeHandleExample } from "./Hooks/UseImperativeHandleExample";
+import UseInsertionEffectExample from "./Hooks/UseInsertionEffectExample";
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
@@ -24,7 +25,8 @@ function App() {
   // return <UseEffectExampleTwo />;
   // return <UseEffectEvenetTimer />;
   // return <UseIdExample />;
-  return <UseImperativeHandleExample />;
+  // return <UseImperativeHandleExample />;
+  return <UseInsertionEffectExample />;
 }
 
 export default App;
