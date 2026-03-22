@@ -13,7 +13,8 @@
 // import { UseIdExample } from "./Hooks/UseIDExample";
 // import { UseImperativeHandleExample } from "./Hooks/UseImperativeHandleExample";
 // import UseInsertionEffectExample from "./Hooks/UseInsertionEffectExample";
-import { UseLayoutEffectExample } from "./Hooks/UseLayoutEffectExample";
+// import { UseLayoutEffectExample } from "./Hooks/UseLayoutEffectExample";
+import ExpensiveComponent from "./Hooks/UseMemoExample";
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
@@ -28,7 +29,8 @@ function App() {
   // return <UseIdExample />;
   // return <UseImperativeHandleExample />;
   // return <UseInsertionEffectExample />;
-  return <UseLayoutEffectExample />;
+  // return <UseLayoutEffectExample />;
+  return <ExpensiveComponent />;
 }
 
 export default App;
