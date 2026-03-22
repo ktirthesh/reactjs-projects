@@ -16,7 +16,9 @@
 // import { UseLayoutEffectExample } from "./Hooks/UseLayoutEffectExample";
 // import Comments from "./Hooks/useOptimisticExample";
 // import ExpensiveComponent from "./Hooks/UseMemoExample";
-import InputFocus from "./Hooks/useRefExample";
+// import InputFocus from "./Hooks/useRefExample";
+
+import Counter from "./Hooks/useSyncExternalStoreExample";
 
 function App() {
   // return <UseReducerExample />;
@@ -35,7 +37,8 @@ function App() {
   // return <UseLayoutEffectExample />;
   // return <ExpensiveComponent />;
   // return <Comments />;
-  return <InputFocus />;
+  // return <InputFocus />;
+  return <Counter />;
 }
 
 export default App;
