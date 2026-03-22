@@ -14,10 +14,10 @@
 // import { UseImperativeHandleExample } from "./Hooks/UseImperativeHandleExample";
 // import UseInsertionEffectExample from "./Hooks/UseInsertionEffectExample";
 // import { UseLayoutEffectExample } from "./Hooks/UseLayoutEffectExample";
-
-import Comments from "./Hooks/useOptimisticExample";
-
+// import Comments from "./Hooks/useOptimisticExample";
 // import ExpensiveComponent from "./Hooks/UseMemoExample";
+import InputFocus from "./Hooks/useRefExample";
+
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
@@ -34,7 +34,8 @@ function App() {
   // return <UseInsertionEffectExample />;
   // return <UseLayoutEffectExample />;
   // return <ExpensiveComponent />;
-  return <Comments />;
+  // return <Comments />;
+  return <InputFocus />;
 }
 
 export default App;
