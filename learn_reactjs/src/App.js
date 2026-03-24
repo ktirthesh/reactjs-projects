@@ -18,8 +18,8 @@
 // import ExpensiveComponent from "./Hooks/UseMemoExample";
 // import InputFocus from "./Hooks/useRefExample";
 
-import Counter from "./Hooks/useSyncExternalStoreExample";
-
+// import Counter from "./Hooks/useSyncExternalStoreExample";
+import SearchComponent from "./Hooks/useTransitionExample";
 function App() {
   // return <UseReducerExample />;
   // return <UseActionStateExample />;
@@ -38,7 +38,8 @@ function App() {
   // return <ExpensiveComponent />;
   // return <Comments />;
   // return <InputFocus />;
-  return <Counter />;
+  // return <Counter />;
+  return <SearchComponent />;
 }
 
 export default App;
